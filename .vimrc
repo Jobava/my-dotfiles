@@ -1,3 +1,6 @@
+"Remember to first do:
+"    git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
 "-----------------------
 " following is clojurescript mode
 "----------------------
