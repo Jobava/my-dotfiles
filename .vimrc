@@ -33,6 +33,16 @@ Plugin 'gmarik/Vundle.vim'
 " Add all your plugins here (note older versions of Vundle used Bundle
 " instead of Plugin)
 
+Plugin 'tmhedberg/SimpylFold'
+Plugin 'vim-scripts/indentpython.vim'
+Plugin 'vim-scripts/bad-whitespace'
+Plugin 'scrooloose/syntastic'
+Plugin 'nvie/vim-flake8'
+Plugin 'jnurmine/Zenburn'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+
+let g:SimpylFold_docstring_preview=1
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -53,10 +63,6 @@ set foldlevel=99
 
 nnoremap <space> za
 
-Plugin 'tmhedberg/SimpylFold'
-
-let g:SimpylFold_docstring_preview=1
-
 au BufNewFile,BufRead *.py
     \ set tabstop=4 |
     \ set softtabstop=4 |
@@ -70,9 +76,6 @@ au BufNewFile,BufRead *.js, *.html, *.css
     \ set tabstop=2 |
     \ set softtabstop=2 |
     \ set shiftwidth=2
-
-Plugin 'vim-scripts/indentpython.vim'
-Plugin 'vim-scripts/bad-whitespace'
 
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
@@ -93,13 +96,8 @@ if 'VIRTUAL_ENV' in os.environ:
   execfile(activate_this, dict(__file__=activate_this))
 EOF
 
-Plugin 'scrooloose/syntastic'
-Plugin 'nvie/vim-flake8'
 let python_highlight_all=1
 syntax on
-
-Plugin 'jnurmine/Zenburn'
-Plugin 'altercation/vim-colors-solarized'
 
 if has('gui_running')
   set background=dark
@@ -112,5 +110,4 @@ call togglebg#map("<F5>")
 
 set nu
 
-Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 set clipboard=unnamed
