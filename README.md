@@ -11,3 +11,7 @@ Possible better way:
 * How to install: https://github.com/klen/python-mode#how-to-install
 * Tao's dotfiles: https://github.com/tao12345666333/vim
 * Screenshot: http://moelove.info/vim/
+
+Possible better way that works:
+
+* http://fisadev.github.io/fisa-vim-config/
